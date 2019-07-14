@@ -1,0 +1,22 @@
+let str = "word gd das  dsa sad asd gg  good word asd b asd asd asdd ddd d a b  gd c d  ";  
+let calc = (txt,symbol) =>{
+  let toOne =0;
+  for(var i=0;i<str.length ;i++){
+    if(txt[i]==symbol[toOne]){
+    toOne++;
+    }else{
+      toOne=0;
+    }
+       if(toOne==symbol.length && txt[i+1]==" " 
+       && symbol.length>=1 
+       && (txt[i-symbol.length]== " " ||txt[i-symbol.length]== undefined   )){
+         
+    return console.log("GCCCCC!!!!!!!!!!!!!!! I found word from index :"
+    + (++i-symbol.length))
+  }
+}
+  }
+
+
+
+calc(str,"word");
