@@ -1,0 +1,24 @@
+let numrs = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15]
+let fizz=3;
+let buzz = 5;
+let afizz=0;
+let abuzz=0;
+let FizzBuzz=0;
+
+
+for(let iii=1;iii<numrs.length+1;iii++){
+  abuzz=iii/buzz;
+  afizz=iii/fizz;
+  // console.log(abuzz)
+    // console.log(afizz)
+  if(abuzz==3 && afizz==5){
+    console.log(iii+"FizzBuzz");
+  }else if(abuzz==1||abuzz==2){
+    console.log(iii+"Buzz");
+  }else if(afizz==1||afizz==2||afizz==3||afizz==4){
+    console.log(iii+"Fizz");
+  }
+
+}
+
+
